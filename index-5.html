@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>JND Pronos — Analyse sportive</title>
+<style>
+:root{--bg:#0b1220;--panel:#121d30;--panel2:#18263d;--text:#f4f7fb;--muted:#9aabc3;--green:#39d98a;--gold:#ffc857;--line:#283750}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(160deg,#101b2d,#080d17 65%);color:var(--text);font:15px system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{padding:22px 17px 18px;background:#101827;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}
+.wrap{max-width:980px;margin:auto}.brand{display:flex;align-items:center;gap:12px}.logo{width:45px;height:45px;border-radius:14px;background:linear-gradient(135deg,var(--green),#00a3a3);display:grid;place-items:center;color:#07151a;font-size:22px;font-weight:900}.brand h1{font-size:21px;margin:0;letter-spacing:.5px}.brand p{margin:3px 0 0;color:var(--muted);font-size:12px}
+nav{display:flex;gap:8px;margin-top:17px;overflow:auto}nav button,.filter{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:10px;padding:10px 13px;white-space:nowrap;cursor:pointer}nav button.active{background:var(--green);color:#062016;border-color:var(--green);font-weight:800}
+main{max-width:980px;margin:auto;padding:18px 14px 40px}.hero{padding:22px;border-radius:18px;background:linear-gradient(125deg,#173d39,#17243b 68%);border:1px solid #2d5d55}.eyebrow{color:var(--green);font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}.hero h2{font-size:27px;line-height:1.15;margin:9px 0}.hero p{color:#c3d3e3;line-height:1.5;margin:0 0 15px}.tag{display:inline-block;background:#0b2929;border:1px solid #2a6457;color:#8ff0c1;padding:6px 9px;border-radius:20px;font-size:11px}
+.section-title{display:flex;justify-content:space-between;align-items:center;margin:23px 0 12px;gap:12px}.section-title h3{margin:0;font-size:18px}.muted{color:var(--muted);font-size:12px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:15px;min-width:0}.league{color:var(--muted);font-size:11px;margin-bottom:12px}.teams{display:flex;justify-content:space-between;align-items:center;gap:10px;font-weight:750}.teams span{flex:1}.teams span:last-child{text-align:right}.vs{font-size:11px;color:var(--muted);background:var(--panel2);padding:5px 7px;border-radius:8px}.meta{display:flex;justify-content:space-between;color:var(--muted);font-size:11px;margin:12px 0}.probrow{display:flex;gap:6px;margin:9px 0}.prob{flex:1;text-align:center;background:var(--panel2);border-radius:8px;padding:8px 3px;font-size:11px;color:var(--muted)}.prob strong{display:block;color:var(--text);font-size:14px;margin-top:3px}.bar{height:6px;background:#27354b;border-radius:10px;overflow:hidden;margin:12px 0}.bar span{display:block;height:100%;background:linear-gradient(90deg,var(--green),#90efb8);width:68%}.btn{width:100%;padding:11px;border:0;border-radius:10px;background:var(--green);color:#062016;font-weight:850;cursor:pointer}.btn.secondary{background:var(--panel2);border:1px solid var(--line);color:var(--text);margin-top:8px}.panel{background:var(--panel);border:1px solid var(--line);padding:17px;border-radius:15px}.panel label{display:block;color:var(--muted);font-size:12px;margin:12px 0 6px}.panel input,.panel select,.panel textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:9px;background:#0c1524;color:var(--text);font:inherit}.result{margin-top:14px;padding:14px;border-radius:12px;background:#0c2b27;border:1px solid #28604e;line-height:1.55}.notice{font-size:12px;color:var(--muted);line-height:1.55;margin-top:17px;padding:12px;border-left:3px solid var(--gold);background:#201d18;border-radius:0 8px 8px 0}.premium{background:linear-gradient(120deg,#332b18,#1a2436);border:1px solid #67542a}.price{font-size:26px;font-weight:850;color:var(--gold);margin:8px 0}.footer{text-align:center;color:var(--muted);font-size:11px;padding:24px 10px 10px}
+@media(max-width:640px){.grid{grid-template-columns:1fr}.hero h2{font-size:24px}.section-title{align-items:flex-start;flex-direction:column}header{position:static}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand"><div class="logo">J</div><div><h1>JND PRONOS</h1><p>Analyse • Intelligence artificielle • Performance</p></div></div>
+  <nav aria-label="Navigation">
+    <button class="active" data-tab="home">Accueil</button><button data-tab="football">⚽ Football</button><button data-tab="basket">🏀 Basketball</button><button data-tab="analyst">🤖 JND AI Analyst</button><button data-tab="premium">💎 Premium</button>
+  </nav>
+</div></header>
+<main class="wrap">
+<section id="home" class="tab">
+  <div class="hero"><span class="eyebrow">Bienvenue sur JND Pronos</span><h2>Comprendre les matchs.<br>Analyser les données.</h2><p>Une plateforme de démonstration pour explorer les statistiques sportives et les estimations de probabilités, avec une future assistance par intelligence artificielle.</p><span class="tag">VERSION DÉMO • DONNÉES EXEMPLES</span></div>
+  <div class="section-title"><h3>Exemples d'analyses</h3><span class="muted">Les rencontres ci-dessous sont fictives</span></div>
+  <div class="grid">
+    <article class="card"><div class="league">⚽ FOOTBALL • EXEMPLE</div><div class="teams"><span>Lubumbashi FC</span><b class="vs">VS</b><span>Kolwezi United</span></div><div class="meta"><span>Match de démonstration</span><span>Analyse exemple</span></div><div class="probrow"><div class="prob">1<strong>48%</strong></div><div class="prob">N<strong>29%</strong></div><div class="prob">2<strong>23%</strong></div></div><div class="bar"><span style="width:48%"></span></div><p class="muted">Exemple de présentation des probabilités — pas un pronostic réel.</p><button class="btn" onclick="showTab('analyst')">Analyser un match</button></article>
+    <article class="card"><div class="league">🏀 BASKETBALL • EXEMPLE</div><div class="teams"><span>Katanga Basket</span><b class="vs">VS</b><span>Congo Hoops</span></div><div class="meta"><span>Match de démonstration</span><span>Analyse exemple</span></div><div class="probrow"><div class="prob">Équipe A<strong>54%</strong></div><div class="prob">Équipe B<strong>46%</strong></div></div><div class="bar"><span style="width:54%"></span></div><p class="muted">Exemple de probabilités à calculer à partir de statistiques vérifiées.</p><button class="btn" onclick="showTab('analyst')">Analyser un match</button></article>
+  </div>
+  <div class="notice"><strong>Transparence :</strong> cette première version fonctionne sans données sportives en direct et sans connexion à un véritable modèle d'IA. Les noms et chiffres illustrés sont fictifs. Elle ne garantit aucun résultat.</div>
+</section>
+<section id="football" class="tab" hidden><div class="section-title"><h3>⚽ Espace Football</h3><span class="muted">Prototype</span></div><div class="panel"><p>Les analyses réelles nécessiteront une source de données sportives (résultats, forme récente, domicile/extérieur, absences confirmées).</p><button class="btn" onclick="showTab('analyst')">Ouvrir l'analyste</button></div></section>
+<section id="basket" class="tab" hidden><div class="section-title"><h3>🏀 Espace Basketball</h3><span class="muted">Prototype</span></div><div class="panel"><p>Les analyses réelles pourront intégrer les résultats récents, points marqués/encaissés, rythme de jeu, blessures confirmées et performances des joueurs.</p><button class="btn" onclick="showTab('analyst')">Ouvrir l'analyste</button></div></section>
+<section id="analyst" class="tab" hidden><div class="section-title"><h3>🤖 JND AI Analyst</h3><span class="muted">Assistant de démonstration</span></div><div class="panel"><p class="muted">Mode combiné demandé : préparation d’analyse, explication en français simple et suivi des résultats. Cette démo ne calcule pas encore de probabilités réelles et n’appelle pas de modèle IA externe.</p><label for="sport">Sport</label><select id="sport"><option>Football</option><option>Basketball</option></select><label for="teamA">Équipe A</label><input id="teamA" placeholder="Nom de la première équipe"><label for="teamB">Équipe B</label><input id="teamB" placeholder="Nom de la deuxième équipe"><label for="formA">Forme / statistiques de l'équipe A</label><textarea id="formA" rows="2" placeholder="Ex. 5 derniers résultats, buts ou points..."></textarea><label for="formB">Forme / statistiques de l'équipe B</label><textarea id="formB" rows="2" placeholder="Ex. 5 derniers résultats, buts ou points..."></textarea><button class="btn" style="margin-top:14px" onclick="analyze()">Préparer une fiche d'analyse</button><div id="analysisResult" aria-live="polite"></div></div>
+<div class="section-title"><h3>📈 Suivi des prédictions</h3><span class="muted">Enregistrement local sur cet appareil</span></div>
+<div class="panel"><p class="muted">Ajoute une prédiction et son résultat final pour commencer à mesurer la performance. N’enregistre que des données vérifiées.</p>
+<label for="predMatch">Match / rencontre</label><input id="predMatch" placeholder="Ex. Équipe A – Équipe B">
+<label for="predChoice">Prédiction faite</label><input id="predChoice" placeholder="Ex. Équipe A gagne / plus de 2,5 buts">
+<label for="predOutcome">Résultat vérifié</label><select id="predOutcome"><option value="pending">En attente</option><option value="correct">Correcte</option><option value="incorrect">Incorrecte</option><option value="void">Annulée / non évaluée</option></select>
+<button class="btn" style="margin-top:14px" onclick="savePrediction()">Enregistrer le suivi</button><div id="trackingResult" class="result" aria-live="polite"></div><div id="trackingList"></div>
+<button class="btn secondary" onclick="clearPredictions()">Effacer l’historique local</button></div></section>
+<section id="premium" class="tab" hidden><div class="section-title"><h3>💎 JND Premium</h3><span class="muted">Paiement non activé</span></div><div class="panel premium"><span class="tag">PROJET À TESTER</span><h3>Des analyses plus détaillées</h3><p>La version future pourra proposer des statistiques avancées, un historique de prédictions et des rapports plus complets.</p><div class="price">À définir <small style="font-size:13px;color:var(--muted)">/ abonnement</small></div><p class="muted">Airtel Money sera étudié pour le paiement des abonnements lorsque les conditions d'intégration marchande seront confirmées.</p><button class="btn secondary" onclick="alert('La souscription et le paiement ne sont pas encore activés dans cette démo.')">Bientôt disponible</button></div></section>
+<div class="footer">JND PRONOS © Prototype gratuit • Aucun paiement collecté • Aucune prédiction garantie</div>
+</main>
+<script>
+function showTab(id){document.querySelectorAll('.tab').forEach(s=>s.hidden=s.id!==id);document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b.dataset.tab===id));window.scrollTo({top:0,behavior:'smooth'})}
+document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()=>showTab(b.dataset.tab)));
+
+function loadPredictions(){try{return JSON.parse(localStorage.getItem('jndPredictions')||'[]')}catch(e){return []}}
+function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function renderPredictions(){
+ const items=loadPredictions(),list=document.getElementById('trackingList');if(!list)return;
+ const evaluated=items.filter(x=>x.outcome==='correct'||x.outcome==='incorrect');
+ const correct=evaluated.filter(x=>x.outcome==='correct').length;
+ let out=`<p><strong>${evaluated.length?Math.round(correct/evaluated.length*100)+'%':'—'}</strong> de prédictions correctes parmi ${evaluated.length} évaluées (${items.length} enregistrées au total).</p>`;
+ out+=items.length?items.slice().reverse().map(x=>`<div class="card" style="margin:8px 0"><strong>${escapeHTML(x.match)}</strong><p class="muted">${escapeHTML(x.choice)} · ${({'pending':'En attente','correct':'Correcte','incorrect':'Incorrecte','void':'Annulée / non évaluée'})[x.outcome]}</p><button class="btn secondary" onclick="updatePrediction('${x.id}')">Modifier le résultat</button></div>`).join(''):'<p class="muted">Aucune prédiction enregistrée pour le moment.</p>';
+ list.innerHTML=out;
+}
+function savePrediction(){
+ const match=document.getElementById('predMatch').value.trim(),choice=document.getElementById('predChoice').value.trim(),outcome=document.getElementById('predOutcome').value;
+ if(!match||!choice){document.getElementById('trackingResult').textContent='Indique le match et la prédiction avant d’enregistrer.';return}
+ const items=loadPredictions();items.push({id:String(Date.now()),match,choice,outcome});localStorage.setItem('jndPredictions',JSON.stringify(items));
+ document.getElementById('trackingResult').textContent='Prédiction enregistrée sur cet appareil.';document.getElementById('predMatch').value='';document.getElementById('predChoice').value='';renderPredictions();
+}
+function updatePrediction(id){
+ const items=loadPredictions(),item=items.find(x=>x.id===id);if(!item)return;
+ const answer=prompt('Résultat : correct, incorrect, pending ou void',item.outcome);if(!answer)return;
+ if(!['correct','incorrect','pending','void'].includes(answer)){alert('Valeur non reconnue.');return}
+ item.outcome=answer;localStorage.setItem('jndPredictions',JSON.stringify(items));renderPredictions();
+}
+function clearPredictions(){if(confirm('Effacer toutes les prédictions enregistrées sur cet appareil ?')){localStorage.removeItem('jndPredictions');renderPredictions();}}
+document.addEventListener('DOMContentLoaded',renderPredictions);
+
+function analyze(){
+ const sport=document.getElementById('sport').value,a=document.getElementById('teamA').value.trim(),b=document.getElementById('teamB').value.trim(),fa=document.getElementById('formA').value.trim(),fb=document.getElementById('formB').value.trim();
+ if(!a||!b){document.getElementById('analysisResult').innerHTML='<div class="result">Entre le nom des deux équipes pour préparer la fiche.</div>';return}
+ const escape=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ document.getElementById('analysisResult').innerHTML=`<div class="result"><strong>Fiche d'analyse — ${escape(sport)}</strong><p><strong>${escape(a)}</strong> contre <strong>${escape(b)}</strong></p><p><strong>Données équipe A :</strong> ${escape(fa||'Non fournies')}</p><p><strong>Données équipe B :</strong> ${escape(fb||'Non fournies')}</p><hr style="border-color:#28604e"><strong>Étapes d'analyse à effectuer</strong><ol><li>Vérifier les cinq derniers matchs et la qualité des adversaires.</li><li>Comparer les performances à domicile et à l'extérieur.</li><li>Contrôler les absences et la date des données.</li><li>Calculer des probabilités à partir de données suffisantes, puis mesurer leur fiabilité.</li></ol><em>Ce prototype ne calcule pas encore de probabilité et n'utilise pas un véritable modèle IA. N'invente pas de chiffres manquants.</em></div>`;
+}
+</script>
+</body></html>
